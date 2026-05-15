@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form action="#" id="Registration-Form">
+        <div class="input-group">
+            <input type="text" id="fullName" placeholder="Full Name">
+            <span class="error" id="nameError"></span>
+        </div>
+
+        <div class="input-group">
+            <input type="email" id="email" placeholder="Email Address">
+            <span class="error" id="emailError"></span>
+        </div>
+
+        <div class="input-group">
+            <input type="password" id="password" placeholder="Password">
+            <span class="error" id="passError"></span>
+        </div>
+
+        <div class="input-group">
+            <input type="password" id="confirmPassword" placeholder="Confirm Password">
+            <span class="error" id="confirmPassError"></span>
+        </div>
+
+        <div class="input-group">
+            <input type="tel" id="phone" placeholder="Phone Number (e.g. 03001234567)">
+            <span class="error" id="phoneError"></span>
+        </div>
+
+        <div class="input-group">
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female
+            <span class="error" id="genderError"></span>
+        </div>
+
+        <div class="input-group">
+            <select id="course">
+                <option value="">Select Course</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Graphic Designing">Graphic Designing</option>
+                <option value="Digital Marketing">Digital Marketing</option>
+            </select>
+            <span class="error" id="courseError"></span>
+        </div>
+
+        <div class="input-group">
+            <label>Hobbies:</label>
+            <input type="checkbox" name="hobbies" value="Reading"> Reading
+            <input type="checkbox" name="hobbies" value="Coding"> Coding
+            <input type="checkbox" name="hobbies" value="Sports"> Sports
+            <span class="error" id="hobbiesError"></span>
+        </div>
+
+        <div class="input-group">
+            <textarea id="about" placeholder="About Yourself" rows="4"></textarea>
+            <span class="error" id="aboutError"></span>
+        </div>
+
+        <button type="submit">Register Now</button>
+    </form>
+
+    <hr>
+
+    <div id="displayArea">
+        <h3>Registered Students List</h3>
+        <div id="studentContainer"></div>
+    </div>
+
+    </form>
+    
+    <script src="./javascript.js"></script>
+</body>
+</html>
